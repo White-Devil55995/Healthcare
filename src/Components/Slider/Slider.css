@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Slider-block{
+    /* width: calc((100% - 20px) * 0.2); */
+    min-height: 88vh;
+    background-color: #f5f8ff;
+    padding-left: 3%;
+}
+.first-part{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:  25px;
+    padding-bottom: 50px;
+}
+.general-text{
+    color: rgb(212, 211, 211);
+    font-weight: 700;
+    margin: 0;
+}
+.dashboard-icon,.history-icon,.calender-icon,.appointment-icon,.statistics-icon,.chat-icon,.phone-icon{
+    font-size: 20px;
+}
+.dashboard-icon{
+   color: #262a54;
+}
+.dashboard-text{
+    color: #343841;
+    font-size: 16px;
+    font-weight: 500;
+}
+.calender-icon,.history-icon,.appointment-icon,.statistics-icon,.chat-icon{
+    color: rgb(204, 203, 203);
+}
+.phone-icon{
+    color: rgb(104, 103, 103);
+}
+.history-text,.calender-text,.appointment-text,.statistics-text{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(197, 195, 195);
+}
+.dashboard,.appointment-block{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+#dashboard1{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.second-part{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.nav-link{
+    text-decoration: none;
+}
+.thired-part{
+    height: 20px;
+}
+@media (max-width: 576px){
+    .first-part{
+        height: 250px !important;
+        padding-bottom: 20px !important;
+        gap: 12px;
+    }
+    .second-part{
+        height: 100px;
+    }
+    .Slider-block{
+        min-height: 40vh ;
+    }
+}
+@media (min-width: 577px) and (max-width: 767px){
+    .first-part{
+        height: 250px !important;
+        padding-bottom: 20px !important;
+        gap: 12px;
+    }
+    .second-part{
+        height: 130px;
+    }
+    .Slider-block{
+        min-height: 40vh ;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .Slider-block{
+    width: 30%;
+    padding-top: 2%;
+    min-height: 88vh;
+    padding-left: 3%;
+  }
+  .second-part{
+    padding-bottom: 50px;
+  }
+  .general-text{
+   padding-bottom: 10px; 
+  }
+  .dashboard-text{
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px){
+    .general-text{
+       font-size: 16px;
+       padding-bottom: 10px;
+    }
+    .Slider-block{
+        border-bottom-left-radius: 10px;
+         width: calc((100% - 20px) * 0.2);
+    }
+    .first-part{
+        min-height: 350px;
+    }
+    .second-part{
+         min-height: 180px;
+    }
+}

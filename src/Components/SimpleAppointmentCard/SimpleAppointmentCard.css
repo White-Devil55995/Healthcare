@@ -1,0 +1,166 @@
+/* Base styles for the container */
+.upcoming-schedule-container {
+  /* font-family: 'Inter', sans-serif; Using Inter as per instructions */
+  background-color: #f5f8ff; /* Light background to match the image */
+  padding: 20px;
+  border-radius: 10px;
+  color: #333;
+  max-width: 1000px; /* Limit overall width for better presentation */
+  margin: 20px auto; /* Center the component */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.schedule-main-title {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #2c3e50; /* Darker blue for the main title */
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.day-section {
+  margin-bottom: 30px;
+}
+
+.day-title {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 15px;
+  padding-left: 10px; /* Indent slightly */
+}
+
+.appointments-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  gap: 15px; /* Space between cards */
+  justify-content: center; /* Center cards horizontally */
+}
+
+.appointment-card {
+  background-color: #9fa8da;
+  border-radius: 12px; /* More rounded corners */
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text to the left */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+  transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+  min-width: 180px; /* Minimum width for cards */
+  flex-grow: 1; /* Allow cards to grow */
+  /* Flex basis for responsiveness will be handled by media queries */
+}
+
+.appointment-card:hover {
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.card-title {
+  font-size: 1.05em;
+  font-weight: 600;
+  color: #fff; /* Dark blue for titles */
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between title and icon */
+}
+
+.card-icon {
+  font-size: 1.2em; /* Adjust emoji size */
+  line-height: 1; /* Ensure icon doesn't add extra line height */
+}
+
+.card-time {
+  font-size: 0.9em;
+  color: #fff; /* Grey for time */
+  font-weight: 400;
+}
+
+/* Responsive Styles */
+
+/* Small devices (max-width: 576px) */
+@media (max-width: 576px) {
+  .upcoming-schedule-container {
+    padding: 15px;
+  }
+
+  .schedule-main-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  .day-title {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+
+  .appointments-grid {
+    flex-direction: column; /* Stack cards vertically */
+    gap: 12px;
+  }
+
+  .appointment-card {
+    width: 100%; /* Full width for cards */
+    max-width: 300px; /* Optional: limit max width even when full width */
+    margin: 0 auto; /* Center individual cards */
+    padding: 15px 18px;
+  }
+
+  .card-title {
+    font-size: 1em;
+  }
+}
+
+/* Medium devices (min-width: 577px and max-width: 767px) */
+@media (min-width: 577px) and (max-width: 767px) {
+  .upcoming-schedule-container {
+    padding: 20px;
+  }
+
+  .appointments-grid {
+    justify-content: space-around; /* Distribute cards with space */
+    gap: 15px;
+  }
+
+  .appointment-card {
+    flex-basis: calc(50% - 10px); /* Two cards per row, accounting for gap */
+    max-width: calc(50% - 10px); /* Ensure it doesn't grow too wide */
+    padding: 16px 18px;
+  }
+
+  .schedule-main-title {
+    font-size: 1.6em;
+  }
+}
+
+/* Large devices (min-width: 768px and max-width: 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .appointments-grid {
+    justify-content: center; /* Center cards */
+    gap: 20px;
+  }
+
+  .appointment-card {
+    flex-basis: calc(50% - 15px); /* Two cards per row, slightly wider */
+    max-width: calc(50% - 15px);
+    padding: 18px 20px;
+  }
+
+  .schedule-main-title {
+    font-size: 1.7em;
+  }
+}
+
+/* Extra-large devices (min-width: 992px) */
+@media (min-width: 992px) {
+  .appointments-grid {
+    justify-content: center; /* Center cards */
+    gap: 25px; /* Larger gap for desktop */
+  }
+
+  .appointment-card {
+    flex-basis: calc(50% - 20px); /* Two cards per row, even wider */
+    max-width: 350px; /* Max width for each card to prevent excessive stretching */
+    padding: 20px 22px;
+  }
+}

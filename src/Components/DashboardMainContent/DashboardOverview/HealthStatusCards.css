@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.health-cards{
+   display: flex;
+   flex-direction: column;
+}
+.lungs-pic{
+    width: 40px;
+    height: 40px;
+}
+.health-card-1,.health-card-2,.health-card-3{
+    display: flex;
+    flex-direction: column;
+     border-radius: 10px;
+     background-color: #f5f8ff;
+}
+.lungs-block,.data-block{
+margin-bottom: 0;
+font-weight: 600;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.lungs-block{
+  color: #131526;
+}
+.data-block{
+    color: #c4c7cc;
+}
+.update-bar{
+    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+}
+.status-bar-inner,.status-bar-inner1,.status-bar-inner2{
+    border-radius: 5px;
+     width: 70%;
+}
+.status-bar-inner{
+  background-color: #a84545;
+}
+.status-bar-inner1{
+    background-color: #77c2b6;
+}
+.status-bar-inner2{
+    background-color: #dd705e;
+}
+.status-bar{
+    background-color: #e0dfe9;
+    border-radius: 5px;
+}
+.details{
+    color: #9394a4;
+    display: flex;
+    justify-content: end;
+    margin: 0;
+}
+@media (max-width: 576px){
+    .health-cards{
+        width: 100%;
+        min-height: 50px;
+        padding: 2% 2% 2% 2%;
+        gap: 10px;
+    }
+    .health-card-1,.health-card-2,.health-card-3{
+        width: 100%;
+        height: 150px;
+    }
+    .health-card-1,.health-card-2,.health-card-3{
+        padding-top: 4%;
+        gap: 15px;
+    }
+    .lungs-block{
+       gap: 10%;
+       font-size: 16px;
+    }
+    .lungs-text{
+        display: block;
+        padding-top: 6%;
+    }
+    .data-block{
+        font-size: 15px;
+    }
+    .progress-bar{
+        height: 20px;
+    }
+    .update-bar{
+        height: 10px;
+    }
+    .status-bar{
+        width: 60%;
+        height: 10px;
+    }
+    .status-bar-inner,.status-bar-inner1,.status-bar-inner2{
+        height: 10px;
+    }
+    .details{
+        font-size: 15px;
+    }
+}
+@media (min-width : 577px) and (max-width : 767px){
+    .health-cards{
+        flex-direction: row;
+        padding-top: 4%;
+        padding-left: 2%;
+        padding-right: 2%;
+        gap: 10px;
+    }
+    .health-card-1,.health-card-2,.health-card-3{
+        height: 120px;
+        width: 33.3333%;
+        padding: 1% 2% 0 2%;
+        gap: 10PX;
+    }
+    .lungs-block{
+       gap: 10%;
+       font-size: 16px;
+    }
+    .lungs-text{
+        display: block;
+        padding-top: 15%;
+        font-size: 14px;
+    }
+    .lungs-pic{
+        width: 30px;
+        height: 30px;
+    }
+    .data-block{
+        font-size: 14px;
+    }
+    .update-bar{
+        height: 10px;
+    }
+    .status-bar{
+        height: 10px;
+        width: 100%;
+    }
+     .status-bar-inner,.status-bar-inner1,.status-bar-inner2{
+        height: 10px;
+    }
+}
+@media (min-width: 768px) and (max-width : 991px){
+    .health-cards{
+        flex-direction: row;
+        gap: 10px;
+        padding: 3% 3% 2% 4%;
+    }
+    .health-card-1,.health-card-2,.health-card-3{
+        height: 120px;
+        width: 33.3333%;
+        padding: 2% 2% 0 2%;
+        gap: 8PX;
+    }
+    .lungs-text{
+      display: block;
+        padding-top: 15%;
+        font-size: 14px;
+    }
+    .lungs-block{
+       gap: 5%;
+       font-size: 16px;
+    }
+    .data-block{
+        font-size: 14px;
+    }
+    .lungs-pic{
+        width: 30px;
+        height: 30px;
+    }
+     .update-bar{
+        height: 10px;
+    }
+    .status-bar{
+        height: 10px;
+        width: 100%;
+    }
+     .status-bar-inner,.status-bar-inner1,.status-bar-inner2{
+        height: 10px;
+    }
+}
+@media (min-width: 992px){
+    .health-cards{
+        width: 50%;
+        gap: 20px;
+        height: 400px;
+    }
+     .health-card-1,.health-card-2,.health-card-3{
+        height: 33.3333%;
+        width: 100%;
+        padding: 0.5% 2% 0 2%;
+        gap: 2PX;
+     }
+     .lungs-text{
+      display: block;
+      padding-top: 10%;
+      font-size: 15px;
+    }
+    .lungs-block{
+       gap: 5%;
+       font-size: 14px;
+    }
+     .data-block{
+        font-size: 14px;
+    }
+    .lungs-pic{
+        width: 25px;
+        height: 25px;
+    }
+     .update-bar{
+        height: 10px;
+    }
+    .status-bar{
+        height: 10px;
+        width: 100%;
+    }
+     .status-bar-inner,.status-bar-inner1,.status-bar-inner2{
+        height: 10px;
+    }
+}
+@media (min-width: 1200px){
+    .health-cards{
+        min-height: 330px;
+    }
+}

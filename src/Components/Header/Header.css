@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* this is for styling the header part */
+.Header-part{
+    width: 100%;
+}
+.logo-1{
+    color:aqua;
+    font-weight: 700;
+}
+.logo-sub-text{
+    color: #1c172e;
+    font-weight: 700;
+}
+.logo-text-block{
+    width: 100%;
+}
+/* this is for search-block */
+.search-block{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.search{
+    border: 1px solid;
+    border-radius: 5px;
+     display: flex;
+      padding-left: 5px;
+     align-items: center;
+}
+#search-input:focus{
+    outline: none;
+   }
+    #search-input{
+        border: none;
+        background-color: transparent;
+    }
+.notification-block{
+    border: 1px solid;
+}
+ .notification-block{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(50,50,144,255);
+    border-radius: 5px;
+ }
+ .profil-block{
+    display: flex;
+   }
+   .profile-name{
+    display: block;
+     color: #1c172e;
+    font-weight: 600;
+   }
+   .profile{
+      display: flex;
+    align-items: center;
+   }
+   .add-block{
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e3296;
+    color: #fff;
+    border-radius: 5px;
+   }
+   .custom-canvas{
+    background-color:rgba(245,248,255,255) ;
+    z-index: 1000;
+   }
+   .offcanvas-backdrop.show{
+    opacity: 0;
+   }
+   
+@media (max-width: 576px){
+  .Header-part{
+     background-color:rgba(245,248,255,255);
+     height: 125px;
+     padding-bottom: 2%;
+     position: fixed;
+     border-bottom: 1px solid;
+  }
+  .logo-text-block{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-1,.logo-sub-text{
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  /* this is for search block */
+  .search-block,.search{
+    min-height: 30px;
+  }
+  .search-block{
+    gap: 10px;
+  }
+  .search{
+     width: 70%;
+     gap: 10px;
+  }
+  #search-input{
+    height: 30px;
+    width: 91.8%;
+  }
+   /* this is  for notification */
+   .notification-block{
+    width: 9%;
+   }
+   .profil-block{
+     height: 40px;
+     align-items: center;
+     justify-content: center;
+     gap: 20%;
+   }
+   .profile-pic{
+    width: 30px;
+    height: 30px;
+   }
+   .profile{
+    gap: 5px;
+   }
+   .profile-name{
+    font-size: 15px;
+    margin-top: 18px;
+   }
+   .add-block{
+    width: 8%;
+    height: 30px;
+    font-size: 22px;
+   }
+   /* this is for creating custom canvas */
+   .custom-canvas{
+    width: 80% !important;
+    z-index: 1000;
+   }
+   .custom-button{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+}
+@media (min-width:577px) and (max-width:767px){
+    .Header-part{
+     background-color:rgba(245,248,255,255);
+     height: 135px;
+     padding-bottom: 2%;
+     position: fixed;
+     border-bottom: 1px solid;
+  }
+  .logo-text-block{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   .logo-1,.logo-sub-text{
+    font-size: 38px;
+    margin-bottom: 0;
+  }
+  .search-block,.search{
+    min-height: 35px;
+  }
+  .search-block{
+    gap: 6px;
+  }
+  .search{
+    gap: 5px;
+    width: 70%;
+  }
+  .search-icon{
+    font-size: 18px;
+  }
+  #search-input{
+    height: 35px;
+  }
+  .notification-block{
+    width: 6%;
+   }
+   .profile-pic{
+    width: 35px;
+    height: 35px;
+   }
+   .profil-block{
+     height: 50px;
+     align-items: center;
+     justify-content: center;
+     gap: 30px;
+   }
+   .profile-name{
+    font-size: 15px;
+    margin-top: 25px;
+   }
+    .add-block{
+    width: 7%;
+    height: 40px;
+    font-size: 22px;
+   }
+   .profile{
+    gap: 5px;
+   }
+    .custom-canvas{
+    width: 50% !important;
+    overflow-x: hidden;
+   }
+}
+@media (min-width:768px) and (max-width:991px){
+    .Header-part{
+     background-color:rgba(245,248,255,255);
+     height:80px;
+     padding-left: 8px;
+     padding-right: 8px;
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     position: fixed;
+   }
+   .logo-text-block{
+    height: 40px;
+    width: 22%;
+  }
+  .logo-1,.logo-sub-text{
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  .search-block,.search{
+    min-height: 35px;
+  }
+  .search-block{
+    width: 48%;
+    height: 40px;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .search{
+    width: 88%;
+    gap: 5px;
+  }
+  .search-icon{
+    font-size: 18px;
+  }
+  .notification-block{
+    width: 12%;
+  }
+  .profile-pic{
+    width: 35px;
+    height: 35px;
+   }
+   .profil-block{
+    width: 30%;
+    height: 40px;
+    justify-content:flex-end;
+    padding-right: 2%;
+    gap: 10px;
+   }
+   .add-block{
+    width: 40px;
+    height: 100%;
+   }
+   .profile-name{
+    font-size: 15px;
+    margin-top: 25px;
+   }
+   .custom-button{
+    display: none;
+   }
+}
+@media (min-width:992px){
+    .Header-part{
+      height: 90px;
+      display: flex;
+      gap: 10px;
+    }
+    .profile-pic{
+    width: 35px;
+    height: 35px;
+   }
+   .logo-text-block{
+    height: 90px;
+    width: 20%;
+    background-color: rgba(245,248,255,255);
+    border-top-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+   }
+   .logo-1,.logo-sub-text{
+    font-size: 30px;
+   }
+   .search-block{
+    width: 40%;
+    height: 90px;
+    align-items: center;
+    gap: 10px;
+   }
+   .search{
+    width: 80%;
+    height: 40px;
+     gap: 5px;
+     padding-left: 3%;
+   }
+   .search-icon{
+    font-size: 20px;
+  }
+  .notification-block{
+    width: 40px;
+    height: 40px;
+  }
+  .notification{
+    font-size: 20px;
+  }
+  .profile{
+    gap: 2px;
+  }
+  .profil-block{
+    width: 40%;
+    height: 90px;
+    justify-content: flex-end;
+    padding-right: 4%;
+    border-top-right-radius: 10px;
+    gap: 25px;
+    background-color: rgba(245,248,255,255);
+  }
+  .handburgar{
+    display: none;
+  }
+  .add-block{
+    width: 45px;
+    height: 40px;
+    align-self: center;
+    font-size: 23px;
+  }
+     .profile-name{
+    font-size: 15px;
+    margin-top: 25px;
+   }
+}

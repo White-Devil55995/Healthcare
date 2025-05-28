@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.humanbody{
+    min-height: 300px;
+    z-index: 0;
+}
+.body{
+    background-color: #f5f8ff;
+    min-height: 200px;
+}
+.healthy-heart{
+    border-radius: 5px;
+    background-color: #31309b;
+}
+.heart-icon{
+    color: #e43939;
+}
+.search-block1{
+    margin: 0;
+    padding: 0;
+}
+.body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: -10;
+}
+.human-body{
+ display: block;
+ justify-self: center;
+ position: absolute;
+}
+.healthy-heart{
+     color: #fff;
+      position: absolute;
+      justify-self: end;
+       height: 35px;
+        display: flex;
+        align-items: center;
+        z-index: 0;
+}
+.heart-icon{
+ font-size: 18px;
+}
+.search-block1{
+  position: absolute;
+  z-index: 0;
+}
+.search-icon1{
+  font-size: 20px;
+}
+.leg-status{
+position: absolute;
+display: flex;
+align-items: center;
+border-radius: 5px;
+background-color: #16dee9;
+color: #0591ae;
+z-index: 0;
+}
+.leg-pic{
+        width: 20px;
+        height: 20px;
+     }
+     .heart-icon{
+        font-size: 20px;
+     }
+@media (max-width: 576px){
+    .humanbody{
+        padding: 0 2% 0 2%;
+    }
+     .body{
+        min-height: 500px;
+        padding-top: 2%;
+     }
+     .human-body{
+        height: 450px;
+        width: 55%;
+     }
+     .healthy-heart{
+        width: 40%;
+        top: 23.5%;
+        left: 57%;
+        font-size: 14px;
+        padding: 0 2% 0 2%;
+        gap: 10px;
+     }
+     .heart-icon{
+        font-size: 18px !important;
+     }
+     .search-block1{
+        top: 3%;
+        left: 85%;
+     }
+     .search-icon1{
+        font-size: 20px;
+     }
+     .leg-status{
+        height: 35px;
+        width: 40%;
+        padding: 0 2% 0 2%;
+        gap: 10px;
+        top: 65%;
+        left: 5%;
+        font-size: 14px;
+     }
+     .leg-pic{
+        width: 20px;
+        height: 20px;
+     }
+}
+@media (min-width:577px) and (max-width: 767px){
+     .human-body{
+        height: 450px;
+        width: 50%;
+     }
+     .humanbody{
+        padding: 0 2% 0 2%;
+    }
+      .body{
+        min-height: 500px;
+        padding-top: 2%;
+     }
+     .healthy-heart{
+        width: 30%;
+        padding: 0 2% 0 2%;
+        gap: 10px;
+        top: 25%;
+        left: 56%;
+        font-size: 15px;
+     }
+      .search-block1{
+        top: 5%;
+        left: 88%;
+     }
+     .search-icon1{
+        font-size: 25px;
+     }
+     .leg-status{
+        height: 35px;
+        width: 30%;
+        padding: 0 2% 0 2%;
+        gap: 10px;
+        top: 68%;
+        left: 15%;
+        font-size: 14px;
+     }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .human-body{
+        height: 450px;
+        width: 55%;
+     }
+     .humanbody{
+      padding: 0 10% 0 10%;
+     }
+     .body{
+        min-height: 480px;
+        padding-top: 2%;
+        border-radius: 10px;
+     }
+     .healthy-heart{
+        width: 40%;
+        padding: 0 2% 0 2%;
+        gap: 10px;
+        top: 23%;
+        left: 56%;
+        font-size: 15px;
+     }
+     .search-block1{
+        top: 5%;
+        left: 88%;
+     }
+     .search-icon1{
+        font-size: 26px;
+     }
+      .leg-status{
+        height: 35px;
+        width: 40%;
+        padding: 0 2% 0 2%;
+        gap: 10px;
+        top: 68%;
+        left: 5%;
+        font-size: 14px;
+     }
+      
+}
+@media (min-width: 992px){
+   .humanbody{
+      width: 50%;
+      padding-left: 4%;
+       height: 400px !important;
+   }
+   .human-body{
+        height: 90%;
+        width: 55%;
+     }
+     .body{
+        height: 100%;
+        padding-top: 2%;
+        border-radius: 10px;
+        z-index: 0;
+        border-radius: 10px;
+     }
+      .healthy-heart{
+        width: 70%;
+        padding: 0 2% 0 2%;
+        gap: 10px;
+        top: 21%;
+        left: 56%;
+        font-size: 12px;
+     }
+     .search-block1{
+        top: 2%;
+        left: 80%;
+     }
+     .search-icon1{
+        font-size: 26px;
+     }
+      .leg-status{
+        height: 35px;
+        width: 60%;
+        padding: 0 2% 0 2%;
+        gap: 10px;
+        top: 67%;
+        left: -10%;
+        font-size: 12px;
+     }
+}
+@media (min-width: 1200px){
+   .leg-status{
+       width: 50%;
+       left: -4%;
+   }
+   .healthy-heart{
+      width: 52%;
+   }
+}

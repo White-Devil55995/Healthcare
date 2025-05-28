@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.calendar-container {
+  background-color: #f7f7fc;
+  padding: 20px;
+  font-family: sans-serif;
+  color: #333;
+  background-color: #f5f8ff;
+  width: 100%;
+}
+.month-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #555;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.month-header button {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  color: #888;
+  cursor: pointer;
+  padding: 5px;
+  outline: none;
+}
+
+.week-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #777;
+  font-size: 0.9em;
+}
+
+.date-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.date {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.date.active {
+  background-color: #e9f1fc;
+}
+
+.day {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.time {
+  padding: 5px 0;
+  font-size: 0.85em;
+  color: #555;
+}
+
+.time.unavailable {
+  color: #ccc;
+  font-style: italic;
+}
+
+.time.booked {
+  background-color: #bbdefb;
+  color: #1976d2;
+  border-radius: 3px;
+}
+
+.time.booked-start {
+  background-color: #bbdefb;
+  color: #1976d2;
+  border-radius: 3px 0 0 3px;
+}
+
+.time.booked-end {
+  background-color: #bbdefb;
+  color: #1976d2;
+  border-radius: 0 3px 3px 0;
+}
+
+.appointments {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+}
+.time2{
+    color: #fff;
+}
+.appointment {
+  border-radius: 20px;
+  padding: 15px;
+  color: #fff;
+  flex-basis: calc(50% - 7.5px); /* Two items per row on larger screens */
+  box-sizing: border-box;
+}
+
+.appointment.dentist {
+  background-color: #3f51b5;
+}
+
+.appointment.physiotherapy {
+  background-color: #9fa8da;
+}
+
+.appointment .title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.appointment .time {
+  font-size: 0.9em;
+  margin-bottom: 3px;
+}
+
+.appointment .doctor {
+  font-size: 0.8em;
+  color: #eee;
+}
+
+/* Responsive Styles */
+
+/* Small devices (max-width: 576px) */
+@media (max-width: 576px) {
+  .date-grid {
+    grid-template-columns: repeat(3, 1fr); /* Adjust grid for smaller screens */
+  }
+
+  .appointments {
+    flex-direction: column; /* Stack appointments on smaller screens */
+  }
+
+  .appointment {
+    flex-basis: 100%;
+  }
+}
+
+/* Medium devices (min-width: 577px and max-width: 767px) */
+@media (min-width: 577px) and (max-width: 767px) {
+  .date-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .appointments {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .appointment {
+    flex-basis: calc(50% - 5px);
+  }
+}
+
+/* Large devices (min-width: 768px and max-width: 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .date-grid {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .appointments {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .appointment {
+    flex-basis: calc(50% - 7.5px);
+  }
+}
+
+/* Extra-large devices (min-width: 992px) */
+@media (min-width: 992px) {
+  .calendar-container{
+    height: 400px;
+  }
+  .date-grid {
+    grid-template-columns: repeat(7, 1fr);
+    width: 20%;
+  }
+  .date{
+    padding: 5px;
+  }
+  .appointments {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0px;
+  }
+  .dentist{
+    width: 50% !important;
+  }
+  .physiotherapy{
+    width: 80% !important;
+  }
+  
+}
+@media (min-width: 1200px){
+  .date{
+    padding:0px !important;
+  }
+  .date-grid{
+    width: 100%;
+  }
+}
