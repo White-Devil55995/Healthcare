@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./Header.css";
 import Slider from '../Slider/Slider';
+import profile from "../../assets/doctor-profile.png"
 const Header = () =>{
     return(
        <>
@@ -20,7 +21,7 @@ const Header = () =>{
             {/* this is for creating profile-block */}
             <div className="profil-block">
                 <div className='profile'>
-                    <img src="./src/assets/doctor-profile.png" alt="profile-image" className='profile-pic' />
+                    <img src={profile} alt="profile-image" className='profile-pic' />
                     <span className='profile-name'>Dr.Jyothi</span>
                 </div>
                 <div className="add-block">+</div>
